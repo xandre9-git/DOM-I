@@ -65,3 +65,24 @@ mainH4[1].innerHTML = siteContent['main-content']['about-h4']
 mainH4[2].innerHTML = siteContent['main-content']['services-h4']
 mainH4[3].innerHTML = siteContent['main-content']['product-h4']
 mainH4[4].innerHTML = siteContent['main-content']['vision-h4']
+
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+let mainTxt = document.querySelectorAll('.text-content p')
+mainTxt[0].textContent = siteContent['main-content']['features-content']
+mainTxt[1].textContent = siteContent['main-content']['about-content']
+mainTxt[2].textContent = siteContent['main-content']['services-content']
+mainTxt[3].textContent = siteContent['main-content']['product-content']
+mainTxt[4].textContent = siteContent['main-content']['vision-content']
+
+let contactHeader = document.querySelectorAll('.contact h4')
+contactHeader[0].innerHTML = siteContent['contact']['contact-h4']
+
+let contactTxt = document.querySelectorAll('.contact p')
+contactTxt[0].textContent = siteContent['contact']['address']
+contactTxt[1].textContent = siteContent['contact']['phone']
+contactTxt[2].textContent = siteContent['contact']['email']
+
+let footer = document.querySelector('footer')
+footer.textContent = siteContent['footer']['copyright']
